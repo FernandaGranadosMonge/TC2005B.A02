@@ -1,0 +1,17 @@
+.kiddough {
+    width: 100%;
+    height: 403px;
+    background-image: url(images/kidDough.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.kidMask {
+    width: 100%;
+    height: 403px;
+    background-image: url(images/kidMask.png);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
