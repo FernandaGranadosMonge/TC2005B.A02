@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve & Kate's Camp</title>
+    <meta name="author" content="Fernanda Granados Monge">
     <meta name="description" content="This is the description of the page that is used by SEO to optimize search 
     results and to provide a summary of the site.">
-    <meta name="author" content="Fernanda Granados Monge">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/assistant" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 </head>
 <body>
     
@@ -17,73 +19,78 @@
         </div>
     
         <nav>
-            <a href="#home">HOME</a>
-            <a href="#locs">LOCATIONS</a>
-            <a href="#test">TESTIMONIALS</a>
-            <a href="#cont">CONTACT US</a>
+            <a href="#home"><b>HOME</b></a>
+            <a href="#locs"><b>LOCATIONS</b></a>
+            <a href="#test"><b>TESTIMONIALS</b></a>
+            <a href="#cont"><b>CONTACT US</b></a>
         </nav>
 
         <div>
-            <button>LOG IN</button>
+            <button id="LogIn" class="Buttons">LOG IN</button>
         </div>
-        
+
     </header>
 
     <main>
-        <section id="home">
+        <div id="home">
+
             <div>
-                <img src="images/kidsPies.png" alt="Kids throwing pies at each other">
-            </div>
+                <img id="Banner" src="images/kidsPies.png" alt="Kids throwing pies at each other">
+            </div><!--
 
-            <h1>Here, we put kids in charge</h1>
+        --><div id="HomeInfo"><!--
+                --><article id="HomeMainArticle">
+                    <div>
+                        <h2>Here, we put kids in charge</h2>
+                        <h3>Preposterous? Possibly. <br> Effective? You betcha</h3>
+                    </div>
+                    <p>
+                        When you trust kids, they trust themselves. For 44 years, we’ve put kids in charge of their own learning experience. 
+                        They try, fail, and learn on their own. They learn to trust their own judgment, and tackle the challenges of an ever changing world with creativity and confidence.<br>
+                        Campers choose minute to minute from a variety of activities including, sewing, stop-motion animation, music, sports & recreation, makers crafts, bread making, and more. 
+                        They’ll decide what they want to do, and for how long. Our job is to get out of their way, cheerlead creative risks, and provide just enough guidance to make sure nobody does anything totally* asinine.<br>
 
-            <article>
-                <h2>Preposterous? Possibly. Effective? You betcha</h2>
-                <p>
-                    When you trust kids, they trust themselves. For 44 years, we’ve put kids in charge of their own learning experience. 
-                    They try, fail, and learn on their own. They learn to trust their own judgment, and tackle the challenges of an ever changing world with creativity and confidence.<br>
-                    Campers choose minute to minute from a variety of activities including, sewing, stop-motion animation, music, sports & recreation, makers crafts, bread making, and more. 
-                    They’ll decide what they want to do, and for how long. Our job is to get out of their way, cheerlead creative risks, and provide just enough guidance to make sure nobody does anything totally* asinine.<br>
-
-                    <br><em>*Totally asinine: By our definition, mistakes aren’t asinine. They’re how you learn.</em>
-                </p>
-            </article>
-
-            <aside>
-                <img src="images/kidSmiling.png" alt="Kid smiling">
-
-                <article>
-                    <h2>Holiday camps</h2>
-                    <p>Camp shouldn’t have an off-season. 
-                        Find your local camp for fall, winter, spring & school breaks to learn all about our activities, specials, and more. 
-                        Camp is for kids ages 4–12.
+                        <br><span><em>*Totally asinine: By our definition, mistakes aren’t asinine. They’re how you learn.</em></span>
                     </p>
                 </article>
 
-                <div>
-                    <button>FIND A HOLIDAY CAMP</button>
-                </div>
-            </aside>
-        </section>
+                <aside>
+                    <img src="images/kidSmiling.png" alt="Kid smiling">
 
-        <section id="locs">
-            <div class="kiddough" >
-                <h1>70+ Locations-Probably near you</h1>
-                <h2>Select a location to know more about our camps</h2>
+                    <article>
+                        <h2>HOLIDAY CAMPS</h2>
+                        <p>Camp shouldn’t have an off-season. 
+                            Find your local camp for fall, winter, spring & school breaks to learn all about our activities, specials, and more. 
+                            Camp is for kids ages 4–12.
+                        </p>
+                    </article>
+
+                    <div>
+                        <button class="Buttons">FIND A HOLIDAY CAMP</button>
+                    </div>
+                </aside>
             </div>
 
-            <table>
+        </div>
+
+        <div class="kiddough" >
+            <h1>70+ Locations-Probably near you</h1>
+            <h2>Select a location to know more about our camps</h2>
+        </div>
+
+        <div id="locs">
+            <table id="LocationsTable">
                 <tr>
-                    <td>STATE</td>
-                    <td>CITY</td>
-                    <td>TYPE OF CAMP</td>
-                    <td>AVAILABILITY</td>
+                    <th>STATE</th>
+                    <th>CITY</th>
+                    <th>TYPE OF CAMP</th>
+                    <th>AVAILABILITY</th>
                 </tr>
                 <tr>
                     <td>Alabama</td>
                     <td><a href="https://www.britannica.com/place/Alexander-City">Alexander City</a></td>
                     <td>Summer Camp</td>
-                    <td><img src="images/icon_check_.jpg" alt="Available"></td>
+                    <td><img src="images/icon_check_.png" alt="Available"></td>
                 </tr>
                 <tr>
                     <td>Alabama</td>
@@ -101,19 +108,19 @@
                     <td>Arizona</td>
                     <td><a href="https://www.britannica.com/place/Nogales-Arizona">Nogales</a></td>
                     <td>Holiday Camp</td>
-                    <td><img src="images/icon_check_.jpg" alt="Available"></td>
+                    <td><img src="images/icon_check_.png" alt="Available"></td>
                 </tr>
                 <tr>
                     <td>Arizona</td>
                     <td><a href="https://www.britannica.com/place/Scottsdale-Arizona">Scottsdale</a></td>
                     <td>Sports Camp</td>
-                    <td><img src="images/icon_check_.jpg" alt="Available"></td>
+                    <td><img src="images/icon_check_.png" alt="Available"></td>
                 </tr>
                 <tr>
                     <td>Arizona</td>
                     <td><a href="https://www.britannica.com/place/Conway-Arkansas">Conway</a></td>
                     <td>Holiday Camp</td>
-                    <td><img src="images/icon_check_.jpg" alt="Available"></td>
+                    <td><img src="images/icon_check_.png" alt="Available"></td>
                 </tr>
                 <tr>
                     <td>Arkansas</td>
@@ -125,65 +132,73 @@
                     <td>Arkansas</td>
                     <td><a href="https://www.britannica.com/place/Beverly-Hills">Beverly Hills</a>
                     <td>Summer Camp</td>
-                    <td><img src="images/icon_check_.jpg" alt="Available"></td>
+                    <td><img src="images/icon_check_.png" alt="Available"></td>
                 </tr>
             </table>
-        </section>
+        </div>
 
         <section id="test">
             <div class="kidMask">
-                <h1>Testimonials</h1>
+                <h2>Testimonials</h2>
                 <p>Learn where your website traffic is coming from, what your visitors are looking for, and how they’re interacting with your content or products through our in-depth Analytics tools.</p>
             </div>
             
-            <div>
+            <div id="TestProfiles">
                 <article>
-                    <img src="images/MayraDutch.png" alt="Profile picture">
-                    <h3>Mayra Dutch <br> AIR FLOW</h3>
+                    <div>
+                        <img src="images/AaronSmith.png" alt="Profile picture">
+                        <h3>Aaron Smith <br> AIR FLOW</h3>
+                    </div>
                     <p>The best solution in the market to solve any problem you may have.</p>
                 </article>
-            </div>
+           
+                <article>
+                    <div>
+                        <img src="images/AnneDonovan.png" alt="Profile picture">
+                        <h3>Anne Donovan <br> AIR FLOW</h3>
+                    </div>
+                    <p>The best solution in the market to solve any problem you may have.</p>
+                </article>
 
-            <div>
                 <article>
-                    <img src="images/AnneDonovan.png" alt="Profile picture">
-                    <h3>Anne Donovan <br> AIR FLOW</h3>
+                    <div>
+                        <img src="images/MayraDutch.png" alt="Profile picture">
+                        <h3>Mayra Dutch <br> AIR FLOW</h3>
+                    </div>
                     <p>The best solution in the market to solve any problem you may have.</p>
                 </article>
-            </div>
-
-            <div>
-                <article>
-                    <img src="images/AaronSmith.png" alt="Profile picture">
-                    <h3>Aaron Smith <br> AIR FLOW</h3>
-                    <p>The best solution in the market to solve any problem you may have.</p>
-                </article>
+            
             </div>
         </section>
 
-        <section>
+        <section id="FormSection">
             <div>
                 <img src="images/kidCounselor.png" alt="Kid and counselor smiling">
             </div>
             
-            <h2 id="cont">Contact Us</h2>
+            <div id="CompleteForm">
+                <h2 id="cont">Contact Us</h2>
 
-            <form>
-                <label for="emailAdress">EMAIL ADRESS</label><br>
-                <input type="email" id="emailAdress" name="emailAddress" placeholder="Your email address"><br>
-                
-                <label for="completeName">YOUR NAME</label><br>
-                <input type="text" id="completeName" name="completeName" placeholder="First and Last Name"><br>
+                <form>
+                    <label for="emailAdress">EMAIL ADRESS</label><br>
+                    <input class="inputs" type="email" id="emailAdress" name="emailAddress" placeholder="Your email address"><br>
+                    
+                    <label for="completeName">YOUR NAME</label><br>
+                    <input class="inputs" type="text" id="completeName" name="completeName" placeholder="First and Last Name"><br>
 
-                <label for="location">YOUR LOCATION</label><br>
-                <input type="text" id="location" name="location" placeholder="Your city">
-                <input type="number" id="zipCode" name="zipCode" placeholder="Your Zip Code"><br>
+                    <label for="location">YOUR LOCATION</label><br>
+                    <div id="CityZip">
+                        <input class="inputs" type="text" id="location" name="location" placeholder="Your city">
+                        <input class="inputs" type="text" id="zipCode" name="zipCode" placeholder="Your Zip Code"><br>
+                    </div>
+                    
+                    <label>YOUR MESSAGE</label><br>
+                    <textarea class="inputs" id="Message" placeholder="Let us know what you would like to chat about!"></textarea><br>
 
-                <label>YOUR MESSAGE</label><br>
-                <textarea placeholder="Let us know what you would like to chat about!"></textarea><br>
+                    <button id="ButtonForm" class="Buttons">SEND MESSAGE</button>
+                </form>
+            </div>
 
-                <button>SEND MESSAGE</button>
-            </form>
         </section>
     </main>
 
@@ -192,48 +207,55 @@
             <img src="images/complexLogo.png" alt="Logo, Address and Socials">
         </div>
 
-        <div>
-            <ul>
-                <li><a href="https://steveandkatescamp.com/contact/">ABOUT S&K</a></li>
-                <li><a href="https://steveandkatescamp.com/philosophy/">Philosophy</a></li>
-                <li><a href="https://steveandkatescamp.com/jobs/">Jobs</a></li>
-                <li><a href="https://steveandkatescamp.com/press/">Press</a></li>
-                <li><a href="https://steveandkatescamp.com/faq/">FAQs</a></li>
-                <li><a href="https://steveandkatescamp.com/events/">Events</a></li>
-            </ul>
+        <div id="LinksAndCo">
+
+            <div id="Links">
+                <div>
+                    <ul>
+                        <li><a class="FooterLinkTitle" href="https://steveandkatescamp.com/contact/">ABOUT S&K</a></li>
+                        <li><a href="https://steveandkatescamp.com/philosophy/">Philosophy</a></li>
+                        <li><a href="https://steveandkatescamp.com/jobs/">Jobs</a></li>
+                        <li><a href="https://steveandkatescamp.com/press/">Press</a></li>
+                        <li><a href="https://steveandkatescamp.com/faq/">FAQs</a></li>
+                        <li><a href="https://steveandkatescamp.com/events/">Events</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a class="FooterLinkTitle" href="https://steveandkatescamp.com/contact/">HELPFUL LINKS</a></li>
+                        <li><a href="https://steveandkatescamp.com/fees/financial-aid/">Financial Aid</a></li>
+                        <li><a href="https://steveandkatescamp.com/bright-horizons/">Using Bright Horizons <br> Back-Up Care</a></li>
+                        <li><a href="https://steveandkatescamp.com/email/">Email List</a></li>
+                        <li><a href="https://steveandkatescamp.com/contact/">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a class="FooterLinkTitle" href="https://steveandkatescamp.com/contact/">OUR CAMPS</a></li>
+                        <li><a href="https://steveandkatescamp.com/locations/">Summer Camps</a></li>
+                        <li><a href="https://steveandkatescamp.com/winter-spring-camps/">Spring Break Camps</a></li>
+                        <li><a href="https://steveandkatescamp.com/winter-spring-camps/">Winter Break Camps</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul>
+                        <li><a class="FooterLinkTitle" href="https://steveandkatescamp.com/contact/">LEGAL STUFF</a></li>
+                        <li><a href="https://steveandkatescamp.com/liability-waiver/">Liability Waiver</a></li>
+                        <li><a href="https://steveandkatescamp.com/dmca-policy/">DMCA</a></li>
+                        <li><a href="https://steveandkatescamp.com/online-guidelines-and-safety/">Steve & Kate's Virtual Camp <br> Guidelines & Safety</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="Copyright">
+                <p>Copyright © 2024. All Rights Reserved.</p>
+            </div>
+
         </div>
 
-        <div>
-            <ul>
-                <li><a href="https://steveandkatescamp.com/contact/">HELPFUL LINKS</a></li>
-                <li><a href="https://steveandkatescamp.com/fees/financial-aid/">Financial Aid</a></li>
-                <li><a href="https://steveandkatescamp.com/bright-horizons/">Using Bright Horizons Back-Up Care</a></li>
-                <li><a href="https://steveandkatescamp.com/email/">Email List</a></li>
-                <li><a href="https://steveandkatescamp.com/contact/">Contact</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li><a href="https://steveandkatescamp.com/contact/">OUR CAMPS</a></li>
-                <li><a href="https://steveandkatescamp.com/locations/">Summer Camps</a></li>
-                <li><a href="https://steveandkatescamp.com/winter-spring-camps/">Spring Break Camps</a></li>
-                <li><a href="https://steveandkatescamp.com/winter-spring-camps/">Winter Break Camps</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <ul>
-                <li><a href="https://steveandkatescamp.com/contact/">LEGAL STUFF</a></li>
-                <li><a href="https://steveandkatescamp.com/liability-waiver/">Liability Waiver</a></li>
-                <li><a href="https://steveandkatescamp.com/dmca-policy/">DMCA</a></li>
-                <li><a href="https://steveandkatescamp.com/online-guidelines-and-safety/">Steve & Kate's Virtual Camp Guidelines & Safety</a></li>
-            </ul>
-        </div>
-        
-        <div>
-            <p>Copyright © 2024. All Rights Reserved.</p>
-        </div>
         <script src="/scripts/index.js"></script>
     </footer>
 
