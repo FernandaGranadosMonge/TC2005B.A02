@@ -50,6 +50,7 @@ header a:hover{
 #HomeInfo{
     border:1px solid;
     display: flex;
+    margin-top: -0.3%
 }
 
 /*Main Article*/
