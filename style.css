@@ -309,7 +309,9 @@ header a:hover{
 }
 
 .inputs::placeholder{
-    padding-left: 1rem; 
+    padding-left: 1rem;
+    font-family: 'Assistant', sans-serif;
+    font-size: 16px; 
 }
 
 #Message{
@@ -330,6 +332,7 @@ header a:hover{
 
 #CompleteForm form textarea{
     height: 35%;
+    border: 2px solid;
 }
 
 #ButtonForm{
