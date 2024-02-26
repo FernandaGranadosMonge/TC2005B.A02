@@ -50,7 +50,7 @@ header a:hover{
 #HomeInfo{
     border:1px solid;
     display: flex;
-    margin-top: -0.3%
+    margin-top: -0.3%;
 }
 
 /*Main Article*/
@@ -309,9 +309,9 @@ header a:hover{
 }
 
 .inputs::placeholder{
-    padding-left: 1rem;
+    padding-left: 1rem; 
     font-family: 'Assistant', sans-serif;
-    font-size: 16px; 
+    font-size: 16px;
 }
 
 #Message{
